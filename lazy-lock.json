@@ -25,6 +25,7 @@
   "tailwind-fold.nvim": { "branch": "main", "commit": "012558a8fcd2e459027640cd72471185e6a77e59" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
+  "vgit.nvim": { "branch": "main", "commit": "8caecf06c8fede4857568f64ff4349b6945362f0" },
   "vim-be-good": { "branch": "master", "commit": "4fa57b7957715c91326fcead58c1fa898b9b3625" },
   "vim-react-snippets": { "branch": "main", "commit": "19c86459f4cd545f889624df13b8d5862457c633" }
 }
