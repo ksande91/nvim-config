@@ -10,3 +10,9 @@ vim.opt.number = true
 
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true })
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
+vim.filetype.add({
+  pattern = { [".*/waybar/config"] = "jsonc" }
+})
