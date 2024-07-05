@@ -1,6 +1,9 @@
 return {
   {
     "hrsh7th/cmp-nvim-lsp",
+    dependencies = {
+      "mlaursen/vim-react-snippets",
+    },
   },
   {
     "L3MON4D3/LuaSnip",
@@ -14,6 +17,7 @@ return {
     config = function()
       local cmp = require("cmp")
 
+      require("vim-react-snippets").lazy_load()
       require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
@@ -41,7 +45,7 @@ return {
           ["<CR>"] = cmp.mapping.confirm({ select = true }),
         }),
         sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
+          { name = "nvim_lsp" },
           { name = "luasnip" }, -- For luasnip users.
         }, {
           { name = "buffer" },
