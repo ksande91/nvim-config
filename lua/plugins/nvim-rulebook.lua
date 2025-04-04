@@ -1,14 +1,14 @@
 return {
 	"chrisgrieser/nvim-rulebook",
 	config = function()
-		require("rulebook").setup = {
+		require("rulebook").setup({
 			ignoreComments = {
 				eslint_d = {
-					comment = "// eslint-disable-line %s",
-					location = "sameLine",
+					comment = "// eslint-disable-next-line %s",
+					location = "prevLine",
 				},
 			},
-		}
+		})
 	end,
 	keys = {
 		{

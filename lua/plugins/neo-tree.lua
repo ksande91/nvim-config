@@ -4,10 +4,9 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
-    "MunidTanjim/nui.nvim",
+    "MunifTanjim/nui.nvim",
   },
   config = function()
     vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
   end
 }
-
